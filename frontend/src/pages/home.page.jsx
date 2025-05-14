@@ -16,7 +16,22 @@ const HomePage = () => {
     let [ trendingBlogs, setTrendingBlog ] = useState(null);
     let [ pageState, setPageState ] = useState("home");
 
-    let categories = ["programming", "education", "health", "news", "entertainment", "food", "business", "social media", "travel"]
+    let categories = [
+    "Món khai vị",
+    "Món chính",
+    "Món tráng miệng",
+    "Đồ uống",
+    "Ăn chay",
+    "Món Việt",
+    "Món Âu",
+    "Món Hàn",
+    "Món Nhật",
+    "Món Trung",
+    "Bánh & nướng",
+    "Mẹo nấu ăn",
+    "Dinh dưỡng",
+    "Thực đơn hàng ngày"
+    ];
 
     const fetchLatestBlogs = ({ page = 1 }) => {
         axios.post(import.meta.env.VITE_SERVER_DOMAIN + "/latest-blogs", { page })
