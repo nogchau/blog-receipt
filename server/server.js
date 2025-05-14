@@ -6,7 +6,7 @@ import { nanoid } from "nanoid";
 import jwt from "jsonwebtoken";
 import cors from "cors";
 import admin from "firebase-admin";
-import serviceAccountKey from "./react-js-blog-806ee-firebase-adminsdk-fbsvc-5a21003413.json" assert { type: "json" };
+import serviceAccountKey from "./react-js-blog-806ee-firebase-adminsdk-fbsvc-5a21003413.json" with { type: "json" };
 import { getAuth } from "firebase-admin/auth";
 import aws from "aws-sdk";
 
@@ -32,7 +32,7 @@ mongoose.connect(process.env.DB_LOCATION, {
 
 //setting up s3 bucket
 const s3 = new aws.S3({
-  region: "ap-south-1",
+  region: "ap-southeast-2",
   accessKeyId: process.env.AWS_ACCESS_KEY,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
 });
