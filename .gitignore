@@ -1,25 +1,14 @@
-Node modules
 
 frontend/node_modules/ server/node_modules/
 
-Environment variables
-
 server/.env
-
-Build outputs
 
 frontend/dist/ frontend/build/ server/dist/ server/build/
 
-Logs
-
 logs/ .log npm-debug.logyarn-debug.log* yarn-error.log*
-
-Dependency lock files (optional, uncomment if you want to ignore these)
 
 package-lock.json
 
 yarn.lock
-
-Editor and OS files
 
 .DS_Store .vscode/ .idea/ *.suo .ntvs*.njsproj *.sln *.swp
