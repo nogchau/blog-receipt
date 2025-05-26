@@ -24,7 +24,7 @@ admin.initializeApp({
 });
 
 server.use(express.json());
-server.use(cors());
+server.use(cors({ origin: "http://localhost:5173" }));
 
 mongoose.connect(process.env.DB_LOCATION, {
   autoIndex: true,
